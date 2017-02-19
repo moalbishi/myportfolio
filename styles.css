@@ -1,0 +1,248 @@
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+}
+  
+/*=================================*/
+/* HEADER */
+/*=================================*/
+h1{
+    margin-top: 0px;
+    width: auto;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 300;
+     color: #fff;
+}
+h2 {
+    font-size: 140%;
+    word-spacing: 0px;
+    text-align: center;
+    color: #8bcdfb;   
+}
+
+h3 {
+    font-size: 100%;
+    font-weight: 300;
+    margin: 10px auto;
+    color: black;
+}
+
+
+/*=================================*/
+/* Buttons */
+/*=================================*/
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding:  10px 10px;
+    font-weight: 350;
+    text-decoration: none;
+    border-radius: 2px;
+    border: 1px solid #fff;
+    transition: border 0.2s;
+    background-color: rgba(16, 16, 16, 0.36);
+    color: #fff;
+}
+/*-------------------*/
+.btn-ghost:link, 
+.btn-ghost:visited {
+    margin-left: 20px;
+}
+
+.btn-full:hover,
+.btn-full:active,
+.btn-ghost:hover, 
+.btn-ghost:active {
+    border: 3px solid #96d2fb ;
+    color: #fff;  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  background: rgba(150, 154, 160, 0.06);
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color: #fff;  
+}
+
+/* Section Styles */
+
+.main-nav {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  min-height: 30px;
+  padding: 5px;
+  position: fixed;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav li {
+  padding: 5px;
+}
+.nav a {
+  transition: all .1s;
+}
+.nav a:hover {
+  color: white;
+  border-bottom: 2px solid #96d2fb;
+}
+
+header {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, .20)),url('images/web-design.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 45px;
+  height:90vh;
+
+}
+header {
+  line-height: 1.5;
+}
+header .profile-image {
+  margin-top: 55px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  transition: all .5s;
+}
+header .profile-image:hover {
+  transform: scale(1.2) rotate(20deg);
+}
+
+.card {
+  margin: 20px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.card:hover {
+  border-color: #96d2fb;
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #ff9904;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #0399ff;
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+}
+
+a.linkedin {
+  background-image: url(images/linkedin.svg);
+}
+a.github {
+  background-image: url(images/github.svg);
+}
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+  
+  .flex {
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: flex; 
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+
+  header {
+    min-height: 470px;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
+}
+
