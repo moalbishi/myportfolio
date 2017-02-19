@@ -109,7 +109,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, .20)),url('images/web-design.jpg') no-repeat top center ;
+  background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, .40)),url('images/web-design.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 45px;
